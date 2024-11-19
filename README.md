@@ -1,2 +1,2 @@
-# DSA210_Term_Project
+# DSA210 Term Project
 dsa210 project 
