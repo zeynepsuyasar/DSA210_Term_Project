@@ -16,7 +16,7 @@ Correlation Analysis:
 The relationship between step counts and menstrual cycle days will be examined through correlation analysis. The analysis will explore whether there are significant differences in activity levels across various phases of the menstrual cycle.
 
 Exploratory Data Analysis (EDA) and Visualization:
-In this part, we will focus on the trends and patterns within the datasets. Descriptive statistics, such as averages, minimums, and maximums, will be calculated for both datasets to provide a summary of their distributions. An initial hypothesis can be formed with these findings. H0 and H1 will be formed. Step counts during menstrual and non-menstrual days will be visualized. This visualization will be done by using line charts, box plots, and histograms to identify the differences. It will play a crucial role in understanding the relationship between them. 
+In this part, we will focus on the trends and patterns within the datasets. Descriptive statistics, such as averages, minimums, and maximums, will be calculated for both datasets to provide a summary of their distributions. An initial hypothesis can be formed with these findings. H0 and H1 will be formed. Step counts during menstrual and non-menstrual days will be visualized. This visualization will be done by using line charts, box plots, and histograms to identify the differences. It will play a crucial role in understanding the relationship between my menstrual cycle and step count. 
 
 Machine Learning:
 I'll attempt to use machine learning techniques to examine the connection between step counts and menstrual cycle phases. Using the step count, I will try to determine if a particular day is a menstrual cycle day (1) or a non-menstrual day (0).
