@@ -1,4 +1,4 @@
-# DSA210 Term Project
+# DSA210 Term Project - "Step Count and Cycle Correlation Analysis"
 Zeynep Su Yaşar 30694
 
 # Project Idea
