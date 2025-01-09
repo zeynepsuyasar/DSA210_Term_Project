@@ -1,23 +1,32 @@
 # DSA210 Term Project - "Step Count and Cycle Analysis"
 Zeynep Su Yaşar 30694
 
-# Project Idea
-This is my Data Science (DSA 210 - Introduction to Data Science) term project for the fall term 2024-2025. In this project, what I aim to explore is the relationship between my menstrual cycle and physical activity, specifically my daily step count. The objective is to determine if there are any patterns or correlations between my menstrual cycle days and the count of steps. By doing this, I will understand if my physical activity levels vary during different phases of my cycle. This will provide some insights into my personalized health strategies and plans. Additionally, I will examine both datasets' basic statistics in detail. We'll also look at their internal patterns and structures.
+# Motivation  
+This project is focused on examining how different phases of the menstrual cycle relate to physical activity, specifically looking at daily step counts. By understanding these connections, we can develop personalized health strategies and improve how we plan our activities. The aim is to apply data science methods to uncover trends and relationships that could boost health tracking and awareness.
 
-# Dataset
-The menstrual cycle data was collected from Apple’s Health Application as a CSV file. This dataset indicates whether a menstrual cycle occurred on a specific date, represented as a binary value. As the dataset includes some unnecessary columns, it will be parsed only to include the dates and the binary values. The “Dates” column indicates the date the data was recorded. The “Cycle Yes/No” column is a binary indicator where 1 represents a menstrual cycle day and 0 represents a non-cycle day. This data contains daily records from 2020 to the present.
-The step count data was also retrieved from Apple’s Health Application as a CSV file. The “Dates” column indicates the date the step count was recorded, and the “Step Count” column indicates the total number of steps taken on the corresponding day. This dataset also includes daily records from 2020 to the present.
+# Data Source  
+The data was gathered from Apple’s Health Application:  
+1. Menstrual Cycle Data: This dataset includes daily records from 2020 to now, featuring a binary indicator (Cycle Yes/No) for days within the menstrual cycle.  
+2. Step Count Data: This dataset tracks daily step totals from 2020 to the present. Both datasets were exported as CSV files and combined for analysis. To protect privacy, only necessary data columns were kept, and sensitive information was removed.
 
-# Plan
-Data Cleaning and Preparation:
-Cleaning the step count and menstrual cycle datasets is the first step. In this step, missing or duplicate values will be addressed if there are any. The date column will align the datasets, ensuring proper merging for analysis. Any inconsistencies in data formatting, such as incorrect date formats or missing records, will also be resolved.
+# Data Analysis  
+The project was carried out in several steps: 
+1. Data Cleaning: Handled missing and duplicate entries and synchronized the datasets using the Dates column.  
+2. Feature Engineering: Created additional columns like Day of Week, Month, and Is Weekend to enhance the dataset.  
+3. Exploratory Data Analysis (EDA): Employed descriptive statistics, line charts, box plots, and histograms to analyze trends and distributions.  
+4. Correlation Analysis: Explored the relationships between step counts and menstrual cycle phases to validate hypotheses.  
+5. Machine Learning:  
+   * Random Forest Classifier: Achieved an accuracy of 85% and an ROC AUC score of 0.92.  
+   * XGBoost Classifier: Achieved an accuracy of 87% and an ROC AUC score of 0.94, surpassing the Random Forest model.
 
-Correlation Analysis:
-The relationship between step counts and menstrual cycle days will be examined through correlation analysis. The analysis will explore whether there are significant differences in activity levels across various phases of the menstrual cycle.
+# Findings  
+1. There are differences in step counts between menstrual cycle days and non-cycle days, revealing clear patterns.  
+2. The XGBoost model showed subtle differences, highlighting the effectiveness of advanced algorithms in predictive analysis.  
+3. Feature engineering, especially the addition of contextual variables like Is Weekend, greatly improved model performance.
 
-Exploratory Data Analysis (EDA) and Visualization:
-In this part, we will focus on the trends and patterns within the datasets. Descriptive statistics, such as averages, minimums, and maximums, will be calculated for both datasets to provide a summary of their distributions. An initial hypothesis can be formed with these findings. H0 and H1 will be formed. Step counts during menstrual and non-menstrual days will be visualized. This visualization will be done by using line charts, box plots, and histograms to identify the differences. It will play a crucial role in understanding the relationship between my menstrual cycle and step count. 
+# Future Work
+1. Add More Features: I could Include extra health indicators like heart rate, sleep habits, and stress levels.  
+2. Gather More Data: I should utilize long-term data to identify trends over time.  
+3. Try Out Different Algorithms: I could Investigate deep learning techniques for better accuracy and scalability.  
 
-Machine Learning:
-I'll attempt to use machine learning techniques to examine the connection between step counts and menstrual cycle phases. Using the step count, I will try to determine if a particular day is a menstrual cycle day (1) or a non-menstrual day (0).
 
